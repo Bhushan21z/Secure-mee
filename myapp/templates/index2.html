@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+        <h1>Secure Me</h1>
+        <div class="forminput1">
+            <h2>Add Passsword</h2>
+    <form action="add" method="post" id="form_input">
+        {% csrf_token %}
+        <div class="input-group">
+            App Name:<input type="text" class="cutt_url w-50 p-4 rounded-12"
+                placeholder="Application name" name="app_name" required /><br>
+            Username:<input type="text" class="cutt_url w-50 p-4 rounded-12"
+                placeholder="Username" name="user_name"/><br>
+
+            Passsword:<input type="text" class="cutt_url w-50 p-4 rounded-12"
+                placeholder="Password" name="pass_word" required /><br>
+
+            <button class="btn_cutt rounded-6 shortenit_b" role="button">ADD</button>
+        </div>
+    </form>
+</div>
+</div>
+      <div class="content">
+         <h2 style="text-decoration: underline; text-align:center;">My Passswords:</h2>
+            {% for obj in rows %}
+            <ul>
+                <li>App name: {{ obj.application_name }}</li>
+                <li>Username: {{ obj.username }}</li>
+                <p>-------------------------</p>
+            </ul>
+            {% endfor %}
+        
+      </div>
+</div>
+
+</body>
+</html>

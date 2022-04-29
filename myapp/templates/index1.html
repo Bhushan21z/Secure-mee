@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <form action="logout" method="post" class="formlog">
+        {% csrf_token %}
+        <button class="btn_cutt rounded-6 shortenit_b" role="button" type="submit">Logout</button>
+        </div>
+    </form>
+    <div class="container">
+    <div class="box">
+    <h1>Secure Me</h1>
+    <div class="opt">
+    <a href="/get" class="btn_m_l btn_m_r">Get Passsword</a>
+    <a href="/add" class="btn_m_l btn_m_r">Add Passsword</a></div>
+    </div>
+    </div>
+</body>
+</html>

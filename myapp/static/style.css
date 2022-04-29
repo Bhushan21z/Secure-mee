@@ -1,0 +1,95 @@
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('nasa.jpg');
+    background-size: cover;
+}
+.box{
+    margin-top: 10vh;
+    height: 40vh;
+    width: 60vw;
+    /* background-color: aqua; */
+    text-align: center;
+    border-radius: 30px;
+}
+.box1{
+    margin-top: 3vh;
+    height: 40vh;
+    width: 60vw;
+    /* background-color: aqua; */
+    text-align: center;
+    border-radius: 30px;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: cursive;
+    text-decoration: underline;
+}
+.opt{
+    display: flex;
+    justify-content: center;
+}
+.opt a{
+    /* margin-top: 10vh; */
+    height: 40px;
+    background-color: aqua;
+    width: 200px;
+    padding-top: 5px;
+    margin-right: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* Signup*/
+
+.forminput{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    height: 30vh;
+    width: 30vw;
+    margin-left: 15vw;
+    margin-top: 10vh;
+    border-radius: 30px;
+}
+.forminput1{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    height: 24vh;
+    width: 30vw;
+    margin-left: 15vw;
+    margin-top: 5vh;
+    border-radius: 30px;
+}
+
+.formlog{
+    position: absolute;
+    right: 12vw;
+    top: 6vh;
+    display: flex;
+}
+
+.content{
+    margin-top: 7vh;
+    height: 47vh;
+    width: 25vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    overflow: auto;
+}
+.content ul{
+    list-style-type: none;
+    text-align: center;
+    font-size: 17px;
+}
