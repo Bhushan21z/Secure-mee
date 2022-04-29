@@ -9,7 +9,7 @@ from django.core.mail import send_mail
 from .models import Passwords
 from .models import Store
 from .models import NewUser
-import requests
+#import requests
 import random
 
 
