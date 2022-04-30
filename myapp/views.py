@@ -14,9 +14,11 @@ import random
 
 
 def home_page(request):
+    Store.objects.all().delete()
     return render(request,"index.html")
 
 def logout(request):
+    Store.objects.all().delete()
     context_data={
         "submitted": False,
         "error": False,
@@ -33,7 +35,7 @@ def logout(request):
     return render(request,"index1.html",context_data)
 
 def add_page(request):
-
+    Store.objects.all().delete()
     context_data={
         "submitted": False,
         "error": False
@@ -76,7 +78,6 @@ def add_page(request):
 def get_otp(request):
     
     row=Store.objects.all()
-
     database={
         "submitted":False,
         "password_get":"secured"
@@ -102,6 +103,7 @@ def get_otp(request):
 
 def get_page(request):
     
+    Store.objects.all().delete()
     context_data={
         "submitted": False,
         "error": False
@@ -151,7 +153,7 @@ def get_page(request):
     
     
 def signup(request):
-    
+    Store.objects.all().delete()
     context_data={
         "submitted": False,
         "error": False
@@ -181,7 +183,7 @@ def signup(request):
     
     
 def login(request):
-     
+    Store.objects.all().delete()
     context_data={
         "submitted": False,
         "error": False
